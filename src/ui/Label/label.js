@@ -9,7 +9,11 @@ import PropTypes from "prop-types";
  * This functional components is responsible for providing the Label UI element
  */
 const Label = ({ children, bold = false }) => {
-  return <span className={bold ? "bold label" : "label"}> {children} </span>;
+  return (
+    <span data-testid='custom-label' className={bold ? "bold label" : "label"}>
+      {children}
+    </span>
+  );
 };
 Label.propTypes = {
   children: PropTypes.node.isRequired,

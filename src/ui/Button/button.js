@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
  */
 const Button = ({ title = "", handleClick = () => {}, disabled }) => {
   return (
-    <button disabled={disabled} onClick={handleClick}>
+    <button data-testid='custom-button' disabled={disabled} onClick={handleClick}>
       {title}
     </button>
   );

@@ -6,6 +6,7 @@ const App = () => {
   return (
     <ScoreContextProvider>
       <div className='App'>
+        <h2> Scoreboard </h2>
         <Scoreboard />
       </div>
     </ScoreContextProvider>
