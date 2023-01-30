@@ -7,6 +7,14 @@ This project is a POC which simulates the score card of soccer matches
 --------------
 Due to time constraints, I was not able to use Typescript, and hence strong type cast-checking is not implemented in most of the places of the codebase.
 I can explain more on this topic on discussion of my solution.
+________________________________________________
+
+My contact details - 
+joydas1611@gmail.com
++48 571051867
+https://www.linkedin.com/in/jd1611/
+
+______________________________________________
 
 ## Available Scripts
 
