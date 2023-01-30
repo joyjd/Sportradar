@@ -50,21 +50,27 @@ const dummyFixture = [
   },
 ];
 
+/**
+ *
+ * @returns
+ * This functional component is the initial page bootstrapped as index page with App.js responsible for initializing all the children nodes
+ */
+
 const Scoreboard = () => {
   const { setInitialDayFixture, scoreSummary } = useContext(ScoreContext);
 
   useEffect(() => setInitialDayFixture([...dummyFixture]), []);
+
+  const unfinishedMatches = Object.keys(scoreSummary).filter((dt) => scoreSummary[dt]["matchStatus"] !== "complete");
   return (
     <div className='displayFlex'>
       <div>
         <h3> Match Fixtures </h3>
         {Object.keys(scoreSummary).length > 0 &&
-          Object.keys(scoreSummary)
-            .filter((dt) => scoreSummary[dt]["matchStatus"] !== "complete")
-            .map((dt) => {
-              const { id } = scoreSummary[dt];
-              return <MatchPanel key={id} {...scoreSummary[dt]} />;
-            })}
+          unfinishedMatches.map((dt) => {
+            const { id } = scoreSummary[dt];
+            return <MatchPanel key={id} {...scoreSummary[dt]} />;
+          })}
       </div>
       <div>
         <MatchSummary summary={scoreSummary} />

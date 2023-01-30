@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 export const ScoreContext = React.createContext({
   scoreSummary: {},
+  setInitialDayFixture: () => {},
+  changeMatchStatus: () => {},
+  changeMatchScores: () => {},
 });
 
 /**

@@ -2,8 +2,8 @@
  *
  *  @param {*} id
  *  @param {*} matchStatus
- *  @param {*} HTeamScore
- *  @param {*} ATeamScore
+ *  @param {*} HTeamScore - Home team score
+ *  @param {*} ATeamScore - away team score
  * @returns
  *
  * This functional component is responsible for displaying the action buttons for each associated match
@@ -17,7 +17,7 @@ import { ScoreContext } from "../../context/score";
 import { getRandomNumber } from "./../../utils/utilities";
 import PropTypes from "prop-types";
 
-const ActionPanel = ({ id, matchStatus, HTeamScore, ATeamScore }) => {
+const ActionPanel = ({ id = 0, matchStatus = "", HTeamScore = 0, ATeamScore = 0 }) => {
   const { changeMatchStatus, changeMatchScores } = useContext(ScoreContext);
 
   const handleStartMatch = () => {
@@ -46,9 +46,9 @@ const ActionPanel = ({ id, matchStatus, HTeamScore, ATeamScore }) => {
 };
 
 ActionPanel.propTypes = {
-  id: PropTypes.number,
-  matchStatus: PropTypes.string,
-  HTeamScore: PropTypes.number,
-  ATeamScore: PropTypes.number,
+  id: PropTypes.number.isRequired,
+  matchStatus: PropTypes.oneOf(["start", "ongoing", "complete"]).isRequired,
+  HTeamScore: PropTypes.number.isRequired,
+  ATeamScore: PropTypes.number.isRequired,
 };
 export default ActionPanel;
