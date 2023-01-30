@@ -7,7 +7,6 @@
  * @returns
  *
  * This functional component is responsible for displaying the action buttons for each associated match
- *
  */
 
 import React, { useContext } from "react";
