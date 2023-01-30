@@ -30,7 +30,7 @@ const ActionPanel = ({ id = 0, matchStatus = "", HTeamScore = 0, ATeamScore = 0 
     changeMatchScores(id, HTeamScore + getRandomNumber(1, 5), ATeamScore + getRandomNumber(1, 5));
   };
   return (
-    <div className='displayFlex actionPanel'>
+    <div className='displayFlex actionPanel' data-testid='actionPanel-wrapper'>
       <div className='p-x-sm'>
         <Button title='Start Match' handleClick={() => handleStartMatch()} disabled={matchStatus !== "start"} />
       </div>

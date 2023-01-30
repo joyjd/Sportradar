@@ -14,7 +14,7 @@ import PropTypes from "prop-types";
 
 const ScoreLine = ({ HTeamName = "", HTeamScore = 0, ATeamName = "", ATeamScore = 0 }) => {
   return (
-    <div>
+    <div data-testid='custom-parent-scoreLine-wrapper'>
       <DisplayCard name={HTeamName} score={HTeamScore} />
       --
       <DisplayCard name={ATeamName} score={ATeamScore} />
