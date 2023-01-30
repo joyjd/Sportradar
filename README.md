@@ -11,8 +11,8 @@ ________________________________________________
 
 My contact details - 
 - joydas1611@gmail.com\
-+48 571051867\
-https://www.linkedin.com/in/jd1611/\
+- +48 571051867\
+- https://www.linkedin.com/in/jd1611/
 
 ______________________________________________
 
