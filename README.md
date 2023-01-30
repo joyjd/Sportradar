@@ -10,9 +10,9 @@ I can explain more on this topic on discussion of my solution.
 ________________________________________________
 
 My contact details - 
-joydas1611@gmail.com
-+48 571051867
-https://www.linkedin.com/in/jd1611/
+- joydas1611@gmail.com\
++48 571051867\
+https://www.linkedin.com/in/jd1611/\
 
 ______________________________________________
 
